@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fast-dummy"
+version = "0.1.0"
+description = ""
+authors = ["Michael Tenetko <tenetko@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "fast_dummy"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.78.0"
+fastapi-utils = "^0.2.1"
+uvicorn = "^0.17.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
