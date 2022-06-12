@@ -1,4 +1,4 @@
-from fastapi import Response
+from fastapi.responses import FileResponse
 from fastapi_utils.cbv import cbv
 from fastapi_utils.inferring_router import InferringRouter
 
@@ -12,6 +12,4 @@ class RootPage:
 
     @router.get("/")
     def get_root_page(self):
-        return Response(
-            content="", media_type="text/plain", headers={}, status_code=200
-        )
+        return FileResponse("static/index.html", status_code=200)

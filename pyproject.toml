@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["Michael Tenetko <tenetko@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "fast_dummy"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from .fast_dummy import router as fast_dummy_router
+from .response import router as fast_dummy_router
 from .root import router as root_router
 
 api_router = APIRouter()
