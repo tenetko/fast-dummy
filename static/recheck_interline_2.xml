@@ -26,8 +26,6 @@
         <isBus>false</isBus>
         <isTrain>false</isTrain>
       </flight>
-    </segment>
-    <segment>
       <flight>
         <operatingCarrier>CX</operatingCarrier>
         <marketingCarrier>CX</marketingCarrier>
