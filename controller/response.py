@@ -8,20 +8,24 @@ router = InferringRouter()
 
 @cbv(router)
 class Handler:
-    RESPONSE_TYPES = ["recheck_1", "recheck_2", "recheck_interline_1", "recheck_interline_2"]
-
     def __init__(self):
         pass
 
-    @router.get("/{response_type}")
-    def return_dummy_response(self, response_type):
-        if response_type in self.RESPONSE_TYPES:
-            with open(f"static/{response_type}.xml", "r") as res:
-                return Response(
-                    content=res.read(),
-                    media_type="application/xml",
-                    headers={},
-                    status_code=200,
-                )
-        else:
-            return FileResponse("static/index.html", status_code=200)
+    @router.get("/xml-rb/{response_type}")
+    def return_dummy_response_with_recheck_only(self, response_type):
+        file_name = f"static/xml-rb/{response_type}.xml"
+        return self.read_file(file_name)
+
+    @router.get("/xml-vi-rb/{response_type}")
+    def return_dummy_response_with_recheck_and_interline(self, response_type):
+        file_name = f"static/xml-vi-rb/{response_type}.xml"
+        return self.read_file(file_name)
+
+    def read_file(self, file_name):
+        with open(file_name, "r") as res:
+            return Response(
+                content=res.read(),
+                media_type="application/xml",
+                headers={},
+                status_code=200,
+            )
