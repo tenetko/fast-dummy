@@ -1,0 +1,54 @@
+[
+    {
+        "selfconnect": true,
+        "protected_transfer": true,
+        "isVirtualInterline": true,
+        "price": 47622,
+        "currency": "RUB",
+        "url": "https://fast-dummy.herokuapp.com",
+        "seats": 9,
+        "validatingCarrier": "SU",
+        "isCharter": false,
+        "commission": 2.5,
+        "segment": [
+            {
+                "flight": [
+                    {
+                        "operatingCarrier": "FV",
+                        "marketingCarrier": "SU",
+                        "number": "6771",
+                        "departure": "AER",
+                        "departureDate": "2022-12-25",
+                        "departureTime": "18:00",
+                        "arrival": "IST",
+                        "arrivalDate": "2022-12-25",
+                        "arrivalTime": "19:55",
+                        "baggageRecheck": false,
+                        "virtualInterline": false,
+                        "equipment": "SU9",
+                        "cabin": "Y",
+                        "baggage": "0PC",
+                        "fareCode": "QNO"
+                    },
+                    {
+                        "operatingCarrier": "QR",
+                        "marketingCarrier": "CX",
+                        "number": "9266",
+                        "departure": "IST",
+                        "departureDate": "2022-12-25",
+                        "departureTime": "20:15",
+                        "arrival": "DOH",
+                        "arrivalDate": "2022-12-26",
+                        "arrivalTime": "00:15",
+                        "baggageRecheck": true,
+                        "virtualInterline": true,
+                        "equipment": "77W",
+                        "cabin": "Y",
+                        "baggage": "1PC",
+                        "fareCode": "KR21ATHO"
+                    }
+                ]
+            }
+        ]
+    }
+]

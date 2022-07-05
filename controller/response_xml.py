@@ -7,7 +7,7 @@ router = InferringRouter()
 
 
 @cbv(router)
-class Handler:
+class XmlHandler:
     def __init__(self):
         pass
 
