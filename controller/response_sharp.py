@@ -7,18 +7,18 @@ router = InferringRouter()
 
 
 @cbv(router)
-class JsonHandler:
+class DeeplinkHandler:
     def __init__(self):
         pass
 
     @router.get("/sharp")
-    def return_dummy_response_with_sharp(self, response_type):
-        file_name = f"static/deeplink/deeplink_with_sharp.json"
+    def return_dummy_response_with_sharp(self):
+        file_name = f"static/deeplink/deeplink_with_sharp.xml"
         return self.read_file(file_name)
 
-    @router.get("/no_sharp}")
-    def return_dummy_response_without_sharp(self, response_type):
-        file_name = f"static/deeplink/deeplink_without_sharp.json"
+    @router.get("/nosharp")
+    def return_dummy_response_without_sharp(self):
+        file_name = f"static/deeplink/deeplink_without_sharp.xml"
         return self.read_file(file_name)
 
     def read_file(self, file_name):

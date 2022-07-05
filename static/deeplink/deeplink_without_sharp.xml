@@ -6,7 +6,7 @@
     <isVirtualInterline>true</isVirtualInterline>
     <price>47622</price>
     <currency>RUB</currency>
-    <url>https://fast-dummy.herokuapp.com/flight/123123/</url>
+    <url>https://fast-dummy.herokuapp.com/flight/123123/abcabc</url>
     <seats>9</seats>
     <validatingCarrier>SU</validatingCarrier>
     <isCharter>false</isCharter>
