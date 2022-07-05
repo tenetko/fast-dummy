@@ -11,12 +11,12 @@ class JsonHandler:
     def __init__(self):
         pass
 
-    @router.get("/deeplink/sharp")
+    @router.get("/sharp")
     def return_dummy_response_with_sharp(self, response_type):
         file_name = f"static/deeplink/deeplink_with_sharp.json"
         return self.read_file(file_name)
 
-    @router.get("/deeplink/no_sharp}")
+    @router.get("/no_sharp}")
     def return_dummy_response_without_sharp(self, response_type):
         file_name = f"static/deeplink/deeplink_without_sharp.json"
         return self.read_file(file_name)

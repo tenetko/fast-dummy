@@ -10,5 +10,5 @@ static_router = APIRouter()
 
 api_router.include_router(fast_dummy_router_xml, prefix="/fast/xml")
 api_router.include_router(fast_dummy_router_json, prefix="/fast/json")
-api_router.include_router(fast_dummy_router_sharp, prefix="fast/sharp")
+api_router.include_router(fast_dummy_router_sharp, prefix="fast/deeplink")
 static_router.include_router(root_router)
